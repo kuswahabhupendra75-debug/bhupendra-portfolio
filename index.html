@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhupendra Sinh Kushwaha - Cyber Security Specialist</title>
+
+  <style>
+    /* BASIC SETTINGS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #02050f;
+      color: white;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    /* HEADER */
+    header {
+      background: #030a18;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 2px solid #00eaff;
+      box-shadow: 0 0 20px #00eaff;
+    }
+    header h1 { color: #00eaff; }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { color: #00eaff; text-shadow: 0 0 10px #00eaff; }
+
+    /* HERO SECTION */
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero {
+      text-align: center;
+      padding-top: 80px;
+    }
+    #typingName {
+      width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 48px;
+      border-right: 3px solid #00eaff;
+      animation: typing 3s steps(30,end) forwards, blink 1s infinite;
+      margin-top: 25px;
+    }
+    .glitchText { animation: glitch 1s infinite; }
+
+    /* BUTTONS */
+    .btn, #downloadCV {
+      padding: 12px 22px;
+      background: #00eaff;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .btn:hover, #downloadCV:hover { transform: scale(1.1); }
+
+    /* CARDS */
+    .card3d {
+      background: #0d1333;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      border-left: 4px solid #00eaff;
+      transition: 0.3s;
+    }
+    .card3d:hover {
+      transform: rotateY(10deg) rotateX(10deg);
+      box-shadow: 0 0 25px #00eaff;
+    }
+
+    /* PROFILE IMAGE */
+    .profile-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00eaff;
+      box-shadow: 0 0 30px #00eaff;
+      animation: float 3s infinite ease-in-out;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn { from { opacity: 0; margin-top: 40px; } to { opacity: 1; margin-top: 0; } }
+    @keyframes typing { from { width: 0; } to { width: 100%; } }
+    @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0; } }
+    @keyframes glitch {
+      0% { text-shadow:2px 0 red; }
+      20% { text-shadow:-2px 0 blue; }
+      40% { text-shadow:2px 0 green; }
+      60% { text-shadow:-2px 0 yellow; }
+      80% { text-shadow:2px 0 cyan; }
+      100% { text-shadow:0 0 white; }
+    }
+    @keyframes float { 0% { transform: translateY(0);} 50% { transform: translateY(-10px);} 100% { transform: translateY(0);} }
+
+  </style>
+</head>
+
+<body onload="hideLoader()">
+
+<!-- LOADER -->
+<div id="loader" style="position:fixed;top:0;left:0;width:100%;height:100%;background:#000;display:flex;align-items:center;justify-content:center;z-index:9999;">
+  <h1 style="color:#00eaff;font-size:32px;animation: blink 1s infinite;">Initializing System... █</h1>
+</div>
+
+<!-- HEADER -->
+<header>
+  <h1>Bhupendra Sinh Kushwaha – Cyber Security Specialist</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#Certificate">Certificate</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+
+  <div style="display:inline-block;padding:25px;border-radius:20px;background:rgba(0,255,255,0.05);backdrop-filter:blur(6px);border:1px solid #00eaff;box-shadow:0 0 25px #00eaff, inset 0 0 30px #00eaff;">
+    <!-- UPDATED PROFILE PHOTO -->
+    <img src="C:\aarushi\mypic.jpg" class="profile-img" alt="Bhupendra's Profile Photo">
+  </div>
+
+  <h2 id="typingName">Bhupendra Sinh Kushwaha</h2>
+  <p class="glitchText" style="font-size:24px;margin-top:10px;">Cyber Security Expert | Ethical Hacker | PenTester</p>
+
+  <p style="margin-top:20px;font-size:20px;max-width:800px;margin:auto;opacity:0.9;">
+    Protecting digital systems using <span style="color:#00eaff;">advanced security intelligence</span>.
+    Specialized in ethical hacking, network defense, malware analysis, and digital forensics.
+  </p>
+
+  <button class="btn" onclick="scrollToSection('contact')">Hire Me</button>
+
+  <a id="downloadCV" href="Bhupendra_CV.pdf" download>Download CV</a>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 style="font-size:36px;text-shadow:0 0 10px #00eaff;">About Me</h2>
+
+  <div class="card3d">
+    I am a dedicated <b>Cyber Security Engineer</b> with strong command over modern security practices.<br><br>
+    ✔ Ethical Hacking & Penetration Testing<br>
+    ✔ Network Defense Strategies<br>
+    ✔ Web Application Security<br>
+    ✔ Malware Detection & Reverse Engineering<br>
+    ✔ Vulnerability Assessment & Exploit Creation<br>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 style="font-size:36px;text-shadow:0 0 10px #00eaff;">My Cyber Skills</h2>
+
+  <div class="card3d"><b>⚡ Ethical Hacking</b> — Kali Linux, Burp Suite, Metasploit.</div>
+  <div class="card3d"><b>⚡ Penetration Testing</b> — Advanced network & application attacks.</div>
+  <div class="card3d"><b>⚡ Network Security</b> — Firewalls, IDS/IPS, packet analysis.</div>
+  <div class="card3d"><b>⚡ Threat Analysis</b> — Malware inspection and neutralization.</div>
+  <div class="card3d"><b>⚡ Digital Forensics</b> — Cyber-crime investigation.</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 style="font-size:36px;text-shadow:0 0 10px #00eaff;text-align:center;">Projects</h2>
+  <div style="display:flex;flex-direction:column;gap:30px;margin-top:25px;">
+
+    <div class="card3d">
+      <h3 style="color:#00eaff;">🔐 Vulnerability Scanner (Python)</h3>
+      <p>Automated vulnerability scanning using Python, Nmap & regex.</p>
+    </div>
+
+    <div class="card3d">
+      <h3 style="color:#00eaff;">🛡️ Secure Login System</h3>
+      <p>Salted hash authentication, brute-force defense, encrypted cookies.</p>
+    </div>
+
+    <div class="card3d">
+      <h3 style="color:#00eaff;">📡 Network Monitoring Dashboard</h3>
+      <p>Live intrusion alerts with anomaly detection.</p>
+    </div>
+
+    <div class="card3d">
+      <h3 style="color:#00eaff;">🧪 Penetration Testing Lab Setup</h3>
+      <p>Kali Linux, Burp Suite and Metasploitable environment.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="Certificate">
+  <h2 style="font-size:36px;text-shadow:0 0 10px #00eaff;text-align:center;">Certificates</h2>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:30px;margin-top:30px;">
+
+    <div class="card3d" style="width:350px; text-align:center;">
+      <h3>Simplilearn – Cyber Security</h3>
+      <img src="cet-1.jpg" style="width:300px;height:200px;object-fit:cover;border-radius:8px;border:2px solid #00eaff;">
+    </div>
+
+    <div class="card3d" style="width:350px; text-align:center;">
+      <h3>Deloitte – Cyber Job Simulation</h3>
+      <img src="cet-2.jpg" style="width:300px;height:200px;object-fit:cover;border-radius:8px;border:2px solid #00eaff;">
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 style="font-size:36px;text-shadow:0 0 10px #00eaff;">Contact</h2>
+  <div class="card3d">
+    <p>Email: bhupendracyber@cyber.com</p>
+    <p>Phone: +91-9265651510</p>
+
+    <h3 style="margin-top:20px;color:#00eaff;">Follow Me</h3>
+
+    <div style="margin-top:15px; display:flex; gap:25px;">
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/bhupendra-sinh-kushwaha-2010kush" 
+         target="_blank" 
+         style="text-decoration:none;">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+             style="width:45px;filter: drop-shadow(0 0 10px #00eaff);transition:0.3s;">
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/kuswahabhupendra75-debug" 
+         target="_blank"
+         style="text-decoration:none;">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+             style="width:45px;filter: drop-shadow(0 0 10px #00eaff);transition:0.3s;">
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/the_bhupendra_kush_11.11" 
+         target="_blank"
+         style="text-decoration:none;">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+             style="width:45px;filter: drop-shadow(0 0 10px #ff00c8);transition:0.3s;">
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Cyber Security Portfolio. All Rights Reserved.</p>
+</footer>
+
+<script>
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+  function hideLoader(){
+    document.getElementById('loader').style.display='none';
+  }
+</script>
+
+</body>
+</html>
